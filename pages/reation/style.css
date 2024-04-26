@@ -1,5 +1,5 @@
 .container {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     overflow: hidden;
   }
@@ -42,6 +42,42 @@
     width: 80%;
     margin: auto;
   }
+  .box{
+    height: 250px;
+    border-radius: 5px;
+    margin-top: -15%;
+    width: 80%;
+    margin-left: 120px;
+  }
+  .cardstar {
+    display: flex;
+  }
+  .star {
+    font-size: 3vh;
+    cursor: pointer;
+    float: left;
+  }
+  .one {
+    color:rgb(8, 0, 255);
+  }
+  .two {
+    color:rgb(0, 26, 255);
+  }
+  .three {
+    color:rgb(17, 0, 255);
+  }
+  .four {
+    color:rgb(0, 21, 255);
+  }
+  .five {
+    color: rgb(5, 30, 255);
+  }
+  .card b{
+    font-size: 20px; margin-left: 40px; margin-top: 30px;
+  }
+.card p{
+  font-size: 20px; margin-left: 40px; margin-top: 30px;
+}
   
   
   
