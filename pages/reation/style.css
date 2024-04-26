@@ -1,0 +1,79 @@
+.container {
+    background-color: aquamarine;
+    width: 100%;
+    overflow: hidden;
+  }
+  .form1-floating {
+    width: 80%;
+    margin-left: 125px;
+  }
+  .form-floating {
+    width: 80%;
+    height: 500px;
+  }
+  .btn-primary {
+    margin-top: 30px;
+    margin-left: 86%;
+    width: 140px;
+  }
+  .btn-danger {
+    width: 100px;
+    height: 50px;
+    margin-top: 40px;
+  }
+  .btn-dark {
+    width: 100px;
+    height: 50px;
+    margin-top: 40px;
+  }
+  .text h1 {
+    text-align: center;
+    line-height: 5;
+    font-size: 25px;
+  }
+  .btn-danger {
+    width: 100px;
+    height: 50px;
+    margin-top: 40px;
+  }
+  .button2 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
