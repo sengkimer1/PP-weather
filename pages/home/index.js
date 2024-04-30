@@ -1,3 +1,28 @@
+
+function checkLoggedIn() {
+  var loggedInEmail = localStorage.getItem('loggedInEmail');
+
+  if (loggedInEmail) {
+      document.getElementById('loggedInEmail').textContent = loggedInEmail;
+  } else {
+      
+      window.location.href = '../login/index.html';
+  }
+}
+
+
+function logout() {
+ 
+  localStorage.removeItem('loggedInEmail');
+  
+  window.location.href = 'login.html';
+}
+document.addEventListener('DOMContentLoaded', checkLoggedIn);
+
+
+
+
+
 async function fet() {
   const url = 'https://weatherapi-com.p.rapidapi.com/forecast.json?q=phnom%20penh&days=3';
   const options = {
