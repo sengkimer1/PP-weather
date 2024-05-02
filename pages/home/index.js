@@ -9,17 +9,18 @@ function checkLoggedIn() {
       window.location.href = '../login/index.html';
   }
 }
-
-
-function logout() {
- 
-  localStorage.removeItem('loggedInEmail');
-  
-  window.location.href = 'login.html';
-}
 document.addEventListener('DOMContentLoaded', checkLoggedIn);
-
-
+function shareReaction() {
+  var reactionData = "..";
+  localStorage.setItem('sharedReaction', reactionData);
+  window.location.href = '../reation/index.html'; 
+}
+document.getElementById('shareReactionBtn').addEventListener('click', shareReaction);
+function logout() {   
+    localStorage.removeItem('logout');
+    localStorage.removeItem('loggedInEmail');
+    window.location.href = '../login/index.html'; 
+}
 
 
 
@@ -103,7 +104,8 @@ async function fet() {
                           <p>${forecastWeatherInfo.humidity}%</p>
                           <p>${forecastWeatherInfo.windSpeed}</p>
                           <p>${forecastWeatherInfo.uv}</p>
-                      </div>
+                      </div>Men Sopheak
+
                   </div>
                   <div class="border"></div>
                   <div class="box-right">
