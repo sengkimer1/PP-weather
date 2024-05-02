@@ -30,7 +30,7 @@
   border: 1px solid #dedada;
   margin: auto;
   border-radius: 10px;
-  margin-top: 50px;
+ margin-top: 40px;
   display: flex;
   padding: 40px;
   justify-content: space-evenly;
@@ -40,7 +40,7 @@
 }
 .left {
   width:40%;
-  margin-top: 15px;
+
 }
 .left h3{
     margin-bottom: 20px;
@@ -67,25 +67,27 @@
 }
 .rigth {
     width: 80%;
-    margin-top: 15px;
+  
   }
   .rigth h3{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .box-right{
     width: 100%;
     display: flex;
+    font-size: 20px;
     justify-content: space-between;
 }
 .rigth p{
-    font-size: 16px;
+    
     color: 000000;
 }
-.number{
+
+.number1{
   text-align: end;
 }
 .border{
-    border-top: 5px solid #807C7C;
+    border-top: 3px solid #807C7C;
     margin-bottom: 15px;
 }
 .btn-primary{

@@ -99,12 +99,12 @@ async function fet() {
                           <p>Wind (Kph)</p>
                           <p>UV</p>
                       </div>
-                      <div class="number">
+                      <div class="number1">
                           <p>${forecastWeatherInfo.feelsLike} C</p>
                           <p>${forecastWeatherInfo.humidity}%</p>
                           <p>${forecastWeatherInfo.windSpeed}</p>
                           <p>${forecastWeatherInfo.uv}</p>
-                      </div>Men Sopheak
+                      </div>
 
                   </div>
                   <div class="border"></div>
@@ -113,7 +113,7 @@ async function fet() {
                           <p>Country</p>
                           <p>Zone</p>
                       </div>
-                      <div class="number">
+                      <div class="number1">
                           <p>${forecastWeatherInfo.country}</p>
                           <p>${forecastWeatherInfo.zone}</p>
                       </div>

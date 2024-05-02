@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div id="sharedReactions"></div>
-        <div class="button2">
-            <button onclick="back()" type="button" class="btn btn-dark">Back</button>
+      <div id="sharedReactions"></div>
+      <div class="button2">
+        <button onclick="back()" type="button" class="btn btn-dark">
+          Back
+        </button>
 
-           
-            <button onclick="logout()" class="btn btn-danger">Log Out</button>
-
-
-    </div>
-
-    <div class="text"><h1>Phnom Penh Weather Website - People Reaction</h1></div>
-    <b style="margin-left: 125px;">Share Your Reaction</b>
-    <p style="margin-left: 125px;line-height: 3;">Rate (1-5)</p>
-    <div class="form1-floating">
-        <textarea class="form-control" placeholder="1-5" id="floatingTextarea" style=" background-color:rgb(241, 241, 241);"></textarea>
-
+        <button onclick="logout()" class="btn btn-danger">Log Out</button>
       </div>
-       <p style="margin-left: 125px;line-height: 3;">Comment</p>
-    <div class="form-floating" style="margin-left: 125px;">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px; background-color:rgb(241, 241, 241);" ></textarea>
-        <label for="floatingTextarea2" style="color: rgb(153, 154, 156);">Type Your Comment here</label>
+
+      <div class="text">
+        <h1>Phnom Penh Weather Website - People Reaction</h1>
+      </div>
+      <b style="margin-left: 125px">Share Your Reaction</b>
+      <p style="margin-left: 125px; line-height: 3">Rate (1-5)</p>
+      <div class="form1-floating">
+        <textarea
+          class="form-control"
+          placeholder="1-5"
+          id="floatingTextarea"
+          style="background-color: rgb(241, 241, 241)"
+        ></textarea>
+      </div>
+      <p style="margin-left: 125px; line-height: 3">Comment</p>
+      <div class="form-floating" style="margin-left: 125px">
+        <textarea
+          class="form-control"
+          placeholder="Leave a comment here"
+          id="floatingTextarea2"
+          style="height: 150px; background-color: rgb(241, 241, 241)"
+        ></textarea>
+        <label for="floatingTextarea2" style="color: rgb(153, 154, 156)"
+          >Type Your Comment here</label
+        >
         <button class="btn btn-primary" type="submit">Submit</button>
-        <b style="margin-left:1px ; font-size: 25px;">People Reaction About Today's Weather</b>
+        <b style="margin-left: 1px; font-size: 25px"
+          >People Reaction About Today's Weather</b
+        >
       </div>
-      <div
-      class="box">
-      <div class="card">
-        <b>chansreynit.ngoun@institute.pse.ngo</b>
-        <p>Today, the weather is very hot. I need to drink a lot of water
-             to handle this situation. I'll tell my classmate to drink much water
-            as well. How about your feeling everyone?</p>
-            <div class="cardstar" style="margin-left: 30px;">
-                <span onclick="gfg(1)"
-                class="star">★
-               </span>
-               <span onclick="gfg(2)"
-                     class="star">★
-               </span>
-               <span onclick="gfg(3)"
-                     class="star">★
-               </span>
-               <span onclick="gfg(4)"
-                      class="star">★
-               </span>
-               <span onclick="gfg(5)"
-                     class="star">★
-               </span>
-         </div>
-                   
-                   
+      <div class="box">
+        <div class="card">
+          <b>chansreynit.ngoun@institute.pse.ngo</b>
+          <p>
+            Today, the weather is very hot. I need to drink a lot of water to
+            handle this situation. I'll tell my classmate to drink much water as
+            well. How about your feeling everyone?
+          </p>
+          <div class="cardstar" style="margin-left: 30px">
+            <span onclick="gfg(1)" class="star">★ </span>
+            <span onclick="gfg(2)" class="star">★ </span>
+            <span onclick="gfg(3)" class="star">★ </span>
+            <span onclick="gfg(4)" class="star">★ </span>
+            <span onclick="gfg(5)" class="star">★ </span>
+          </div>
+        </div>
       </div>
-    </div> 
-    
-</div>
-<script src="index.js"></script>
-</body>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
