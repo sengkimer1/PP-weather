@@ -1,9 +1,31 @@
-let stars = 
-    document.getElementsByClassName("star");
-let output = 
-    document.getElementById("output");
+var sharedReaction = localStorage.getItem('sharedReaction');
+        var sharedReactionsContainer = document.getElementById('sharedReactions');
+        if (sharedReaction) {
+            sharedReactionsContainer.innerHTML = `<p>${sharedReaction}</p>`;
+        } else {
+            sharedReactionsContainer.innerHTML = "<p>No shared reactions yet.</p>";
+        }
+        let stars = document.getElementsByClassName("star");
+        let output = document.getElementById("output");
+        Array.from(stars).forEach(star => {
+            star.addEventListener("click", function() {
+                output.innerHTML = `You rated: ${star.textContent}`;
+            });
+        });
+      
+        function logout() {   
+            localStorage.removeItem('logout');
+            localStorage.removeItem('loggedInEmail');
+            window.location.href = '../login/index.html'; 
+        }
+        function back(){
+            localStorage.removeItem('back');
+            window.location.href = '../home/index.html';
+        }
+        
+       
+        
  
-// Funtion to update rating
 function gfg(n) {
     remove();
     for (let i = 0; i < n; i++) {
@@ -17,7 +39,7 @@ function gfg(n) {
     output.innerText = "Rating is: " + n + "/5";
 }
  
-// To remove the pre-applied styling
+
 function remove() {
     let i = 0;
     while (i < 5) {
