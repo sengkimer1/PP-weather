@@ -33,7 +33,18 @@ function checkEmail(email) {
     }, 1000); // Simulated delay of 1000 milliseconds (1 second)
   });
 }
+document.getElementById('loginForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent form submission
 
+  // Retrieve email from the input field
+  const userEmail = document.getElementById('email').value;
+
+  // Store the email in local storage
+  localStorage.setItem('loggedInEmail', userEmail);
+
+  // Redirect or perform other actions after login
+  // window.location.href = '/dashboard.html'; // Example: Redirect to dashboard page
+});
 
 
   

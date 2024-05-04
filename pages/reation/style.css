@@ -1,115 +1,111 @@
 .container {
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    overflow: hidden;
-  }
-  .form1-floating {
-    width: 80%;
-    margin-left: 125px;
-  }
-  .form-floating {
-    width: 80%;
-    height: 500px;
-  }
-  .btn-primary {
-    margin-top: 30px;
-    margin-left: 86%;
-    width: 140px;
-  }
-  .btn-danger {
-    width: 100px;
-    height: 50px;
-    margin-top: 40px;
-  }
-  .btn-dark {
-    width: 100px;
-    height: 50px;
-    margin-top: 40px;
-  }
-  .text h1 {
-    text-align: center;
-    line-height: 5;
-    font-size: 25px;
-  }
-  .btn-danger {
-    width: 100px;
-    height: 50px;
-    margin-top: 40px;
-  }
-  .button2 {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: auto;
-  }
-  .box{
-    height: 250px;
-    border-radius: 5px;
-    margin-top: -15%;
-    width: 80%;
-    margin-left: 120px;
-  }
-  .cardstar {
-    display: flex;
-  }
-  .star {
-    font-size: 3vh;
-    cursor: pointer;
-    float: left;
-  }
-  .one {
-    color:rgb(8, 0, 255);
-  }
-  .two {
-    color:rgb(0, 26, 255);
-  }
-  .three {
-    color:rgb(17, 0, 255);
-  }
-  .four {
-    color:rgb(0, 21, 255);
-  }
-  .five {
-    color: rgb(5, 30, 255);
-  }
-  .card b{
-    font-size: 20px; margin-left: 40px; margin-top: 30px;
-  }
-.card p{
-  font-size: 20px; margin-left: 40px; margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  overflow: hidden;
 }
-  
-  
-  
-  
-  
-  
-  
+.form1-floating {
+  width: 80%;
+  margin-left: 125px;
+}
+.form-floating {
+  width: 80%;
+  height: 500px;
+}
+.btn-primary {
+  margin-top: 30px;
+  margin-left: 86%;
+  width: 140px;
+}
+.btn-danger {
+  width: 100px;
+  height: 50px;
+  margin-top: 40px;
+}
+.btn-dark {
+  width: 100px;
+  height: 50px;
+  margin-top: 40px;
+}
+.text h1 {
+  text-align: center;
+  line-height: 5;
+  font-size: 25px;
+}
+.btn-danger {
+  width: 100px;
+  height: 50px;
+  margin-top: 40px;
+}
+.button2 {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reaction-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.reaction-box p {
+  margin: 5px 0;
+}
+
+#reactionForm {
+  margin-top: 20px;
+}
+
+#reactionForm input,
+#reactionForm textarea,
+#reactionForm button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#reactionForm button {
+  background-color: #4c7dfb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#reactionForm button:hover {
+  background-color: #356ac9;
+}
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+/* .reaction-container {
+  margin-bottom: 20px; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  border-radius: 8px;
+}
+
+.reaction-box p {
+  margin: 5px 0; 
+}
+#reactionsList{
+  text-decoration: none;
+  margin-bottom: 20px; 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  border-radius: 8px;
+}
+#reactionsList p{
+  margin: 5px 0;  */
+}
+
