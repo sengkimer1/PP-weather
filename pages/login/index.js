@@ -14,7 +14,7 @@ function login() {
         localStorage.setItem('loggedInEmail', email);
         window.location.href = "../home/index.html"; 
       } else {
-        alert("Error: Please verify your Email.");
+        alert("Email is incorrect");
       }
     })
     .catch(error => {

@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function submitReaction() {
-  const rating = document.getElementById('ratingInput').value;
-  const comment = document.getElementById('commentInput').value;
-  const email = localStorage.getItem("loggedInEmail");
+    const email = localStorage.getItem("loggedInEmail");
+    const comment = document.getElementById('commentInput').value;
+    const rating = document.getElementById('ratingInput').value;
 
   if (rating < 1 || rating > 5 || comment.trim() === "") {
       alert("Please enter a valid rating (1-5) and a comment.");
@@ -71,7 +71,7 @@ function submitReaction() {
   .then(response => response.json())
   .then(data => {
       console.log(data); 
-      displayCommentRatingAndEmail(comment, rating, email);
+      displayCommentRatingAndEmail(email,comment, rating );
   })
   .catch(error => {
       console.error('There was a problem with your fetch operation:', error);
@@ -110,9 +110,8 @@ function displayReactions(reactions) {
         reactionBox.classList.add('reaction-box'); // Add a class for styling
 
         const email = reaction.email;
-        const rating = reaction.rating;
         const comment = reaction.comment;
-
+        const rating = reaction.rating;
         reactionBox.innerHTML = `
             <p>Email: ${email}</p>
             <p>Comment: ${comment}</p>
@@ -133,11 +132,11 @@ document.getElementById('reactionForm').addEventListener('submit', function(even
 
     // Get reaction details from form
     const email = document.getElementById('email').value;
-    const rating = document.getElementById('rating').value;
+  
     const comment = document.getElementById('comment').value;
-
+    const rating = document.getElementById('rating').value;
     // Create reaction object
-    const newReaction = { email: email, rating: rating, comment: comment };
+    const newReaction = { comment: comment ,email: email, rating: rating};
 
     // Call displayCommentRatingAndEmail function with new reaction
     displayCommentRatingAndEmail(email,comment, rating );
@@ -171,4 +170,6 @@ function displayCommentRatingAndEmail(email, comment, rating) {
     // Append the reaction box to the reactions container
     reactionsContainer.appendChild(reactionBox);
 }
+
+
 
